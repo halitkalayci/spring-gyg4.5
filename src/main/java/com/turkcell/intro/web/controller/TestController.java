@@ -21,4 +21,3 @@ public class TestController {
         return "Merhaba "+name + ", yaşınız: "+  age;
     }
 }
-// 16:20
