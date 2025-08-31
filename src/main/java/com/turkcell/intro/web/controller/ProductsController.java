@@ -23,7 +23,8 @@ public class ProductsController
     // Ekleme endpointleri ekleme sonrası durum için eklenen entity'i geri döner.
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED) // eğer işlem başarılı olursa, status code olarak şunu dön.
-    public Product add(@RequestBody Product product){
+    public Product add(@RequestBody Product product)
+    {
         // ekleme.
         Random randon = new Random();
         product.setId(randon.nextInt(1000));
